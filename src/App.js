@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import ImojiRatingComp from "./component/emojiRatingComp/emojiRatingComp";
+import getEmojes from "./core/data/emojesData";
 
 function App() {
+  const [selectedEmoji, setselectedEmoji] = useState({});
+  const selectedEmojiData = (item) => {
+    setselectedEmoji(item);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ImojiRatingComp data={getEmojes} selected={selectedEmoji.id} selectedEmojiData={selectedEmojiData} />
+      <h2>selected  : {selectedEmoji.name}</h2>
     </div>
   );
 }

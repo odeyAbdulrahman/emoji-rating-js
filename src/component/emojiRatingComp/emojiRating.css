@@ -1,0 +1,40 @@
+.emoji-box {
+    border-radius: 10px !important;
+    cursor: pointer !important;
+  }
+  .imo-div{
+    margin-right: 2.5% !important;
+    margin-left: 2.5% !important;
+    padding: 8px;
+    display: inline-block !important;
+    border-radius:20px;
+    transition: all 0.3s ease;
+    cursor: pointer !important;
+    text-align: center;
+  }
+  .emoji-box .emoji-img {
+    width: 65px !important;
+    height: 65px !important;
+    border-bottom: solid 1px #4d100a85 !important ;
+    cursor: pointer !important;
+    border-radius: 50% !important;
+    display: block !important;
+  }
+  .imo-div:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .emoji-box .emoji-img:active {
+    padding: 1px !important;
+    border-bottom: solid 1px #4d100a !important ;
+    border-radius: 50% !important;
+  }
+  .emoji-box .emoji-img:focus {
+    border-bottom: solid 1px #4d100a !important ;
+    border-radius: 50% !important;
+  }
+  .emoji-box .emoji-img:hover {
+    border-bottom: solid 1px #4d100a !important ;
+    border-radius: 50% !important;
+  }
