@@ -1,18 +1,18 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./emojiRating.css";
-function emojiRatingComp({data, selected, selectedEmojiData}) {
+function EmojiRatingComp({data, selected, getSelectedEmojiData, selectedStyle}) {
   //selectedStyle
   return (
     <>
       <div className="emoji-box">
-        {data() &&
-          data().map((item) => (
+        {data &&
+          data.map((item) => (
             <div
              key={item.id}
-              className="imo-div"
-              style={{ border: selected === item.id ? "solid #4d100a 1px" : ""}}
-              onClick={() => { selectedEmojiData(item)} }
+              className="emoji-sub-box"
+              style={ selected === item.id ? selectedStyle : null}
+              onClick={() => { getSelectedEmojiData(item)} }
             >
               <img className="emoji-img" src={item.img} />
               <label>{item.name}</label>
@@ -23,4 +23,4 @@ function emojiRatingComp({data, selected, selectedEmojiData}) {
   );
 }
 
-export default emojiRatingComp;
+export default EmojiRatingComp;
