@@ -1,7 +1,7 @@
 {
   "name": "emoji-rating-js",
-  "version": "0.2.2",
-  "description": "This Library for rating using emojes",
+  "version": "0.2.4",
+  "description": "This Library for rating using emojes in react js",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
@@ -35,11 +35,11 @@
     "react-dom": "^17.0.2"
   },
   "keywords": [
-    "emoji",
-    "emoji js",
-    "emoji rating js",
-    "rating by emojes",
-    "evaluation by emojes"
+    "react emoji",
+    "react emoji js",
+    "react emoji rating js",
+    "rating by emojes in react js",
+    "evaluation by emojes in react js"
   ],
   "author": "odey abdalrahman",
   "license": "MIT",

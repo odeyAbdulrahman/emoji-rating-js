@@ -11,7 +11,7 @@ stories.add("App", () => {
       <br />
       <EmojiRating
         data={Emojes}
-        getEmoji={getEmoji}
+        onChange={getEmoji}
         style={Styles.style2}
       />
       <h4>your rating is: {Emoji.name}</h4>

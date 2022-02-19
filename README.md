@@ -1,6 +1,6 @@
-# emoji-rating-js
+# react emoji rating
 
-This Library for rating using emojes
+This Library for rating using emojes in react js
 
 ## Installation
 
@@ -20,6 +20,14 @@ To used Add this lines
     
 4. `<EmojiRating
         data={Emojes}
-        getEmoji={getEmoji}
+        onChange={getEmoji}
         style={Styles.style2}
       />`
+
+## Options
+
+| Property     | Type      | Description  |
+| :------------ |   :---:       | --------: |
+| data        |  json object         | `List of emoji objects`   |
+| onChange         | func         | `Called when any emoji item selected`   |
+| style        | css object         | `add style to selected emoji item`   |

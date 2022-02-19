@@ -4,7 +4,7 @@ import "./emojiRating.css";
 
 function EmojiRating({
   data,
-  getEmoji,
+  onChange,
   style
 }) {
   const [selected, setSelected] = useState(0);
@@ -17,7 +17,7 @@ function EmojiRating({
               key={item.id}
               className="emoji-sub-box"
               onClick={() => {
-                getEmoji(item);
+                onChange(item);
                 setSelected(item.id);
               }}
             >
