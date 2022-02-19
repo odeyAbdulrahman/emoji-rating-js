@@ -1,11 +1,12 @@
-const getEmojes = () => {
-    const emojes = [
-      { id: 11, name: "Like", img:"https://www.kindpng.com/picc/m/8-82912_clip-art-emoji-faces-printable-free-heart-eyes.png", status: true },
-      { id: 22, name: "very good",   img:"https://www.kindpng.com/picc/m/115-1152472_fingers-clipart-middle-finger-emoji-sad-face-emoji.png",  status: true },
-      { id: 33, name: "good", img:"https://www.kindpng.com/picc/m/4-49781_transparent-background-sad-emoji-hd-png-download.png", status: true },
-      { id: 44, name: "pissed me", img: "https://www.kindpng.com/picc/m/41-415971_angry-face-transparent-angry-emoji-hd-png-download.png", status: false },
-    ];
-    return emojes;
-  };
-  export default getEmojes;
-  
+import Like from '../../../dist/assets/a.png';
+import veryGood from '../../../dist/assets/b.png';
+import good from '../../../dist/assets/c.png';
+import pissedMe from '../../../dist/assets/d.png';
+
+  const emojes = [
+    { id: 1, name: "Like", img:Like, status: true },
+    { id: 2, name: "very good",   img:veryGood,  status: true },
+    { id: 3, name: "good", img:good, status: true },
+    { id: 4, name: "pissed me", img: pissedMe, status: false },
+  ];
+  export default emojes;

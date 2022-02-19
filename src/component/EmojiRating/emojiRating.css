@@ -3,8 +3,8 @@
     cursor: pointer !important;
   }
   .emoji-sub-box{
-    margin-right: 2.5% !important;
-    margin-left: 2.5% !important;
+    margin-right: 1.5% !important;
+    margin-left: 1.5% !important;
     padding: 8px;
     display: inline-block !important;
     border-radius:20px;
@@ -22,7 +22,7 @@
   }
   .emoji-sub-box:hover {
     box-shadow: rgb(0 0 0 / 8%) 0 3px 10px 0;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
   }

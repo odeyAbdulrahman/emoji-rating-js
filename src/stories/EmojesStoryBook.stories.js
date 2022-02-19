@@ -1,23 +1,20 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import { EmojiRatingComp } from "../../dist/index.es";
-import getEmojes from "../core/data/emojesData";
+import { EmojiRating, Emojes, Styles } from "../../dist/index.es";
 
 const stories = storiesOf("emojes app", module);
 stories.add("App", () => {
-  const [selectedEmoji, setselectedEmoji] = useState({});
-  const getSelectedEmojiData = (item) => setselectedEmoji(item);
-  const style = { border: "solid #4d100a 1px", 'box-shadow': "rgb(0 0 0 / 8%) 0 3px 10px 0"};
+  const [Emoji, setEmoji] = useState({});
+  const getEmoji = (item) => setEmoji(item);
   return (
     <>
       <br />
-      <EmojiRatingComp
-        data={getEmojes()}
-        selected={selectedEmoji.id}
-        getSelectedEmojiData={getSelectedEmojiData}
-        selectedStyle={style}
+      <EmojiRating
+        data={Emojes}
+        getEmoji={getEmoji}
+        style={Styles.style2}
       />
-      <h4>your selaction is {selectedEmoji.name}</h4>
+      <h4>your rating is: {Emoji.name}</h4>
     </>
   );
 });

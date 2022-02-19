@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import external from 'rollup-plugin-peer-deps-external';
 import {terser} from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
+import image from 'rollup-plugin-img'
 
 export default [
     {
@@ -27,6 +28,9 @@ export default [
                 exclude: 'node_modules/**',
                 presets: ['@babel/preset-react']
             }),
+            image({
+                limit: 100000,
+              }),
             external(),
             resolve(),
             terser(),
