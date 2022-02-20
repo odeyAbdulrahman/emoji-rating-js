@@ -24,9 +24,9 @@ function EmojiRating({
               <img
                 className="emoji-img"
                 src={item.img}
-                style={selected === item.id ? style : null}
+                style={selected === item.id ? style.img : null}
               />
-              <label>{item.name}</label>
+              <label style={selected === item.id ? style.text : null}>{item.name}</label>
             </div>
           ))}
       </div>

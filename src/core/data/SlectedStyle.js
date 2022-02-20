@@ -1,23 +1,54 @@
   const styles = 
   {
     style1: {
-      'border-bottom': 'none',
-      border: "solid #4d100a 1px",
-      'box-shadow': "rgb(0 0 0 / 8%) 0 3px 10px 0",
+      img:
+      {
+        'border-bottom': 'none',
+        border: "solid #4d100a 1px",
+        transition: 'all 0.1s ease'
+      },
+      text:{
+        color: '#4d100a',
+        'border-bottom': 'solid 1px #4d100a85'
+      }
     },
   
     style2: {
-      'border-bottom': 'none',
-      border: "solid #4d100a 2px",
-      'box-shadow': "rgb(0 0 0 / 8%) 0 3px 10px 0",
-      transition: 'all 0.5s ease'
-
+      img:
+      {
+        'border-bottom': 'none',
+        border: "solid #4d100a 2px",
+        transition: 'all 0.1s ease'
+      },
+      text:{
+        color: '#4d100a',
+        'border-bottom': "solid 2px #4d100a85",
+        transition: "all 0.3s ease"
+      }
     },
-    style2: {
-      'border-bottom': 'none',
-      border: "solid #4d100a 3px",
-      'box-shadow': "rgb(0 0 0 / 8%) 0 3px 10px 0",
-      
+    blueStyle: {
+      img:
+      {
+        'border-bottom': 'none',
+        border: "solid #3498DB 1px",
+        transition: 'all 0.5s ease'
+      },
+      text:{
+        color: '#3498DB',
+        'border-bottom': 'solid 1px #3498DB'
+      }
+    },
+    blueStyle2: {
+      img:
+      {
+        'border-bottom': 'none',
+        border: "solid #3498DB 2px",
+        transition: 'all 0.5s ease'
+      },
+      text:{
+        color: '#3498DB',
+        'border-bottom': 'solid 2px #3498DB'
+      }
     },
   };
   export default styles;
