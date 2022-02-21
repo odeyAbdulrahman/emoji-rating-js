@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 /.storybook
+/src/core/ErrorBoundary.js
+/src/stories.js
+/rollup.config.js
 /.pnp
 .pnp.js
 

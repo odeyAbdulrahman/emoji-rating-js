@@ -51,5 +51,8 @@
     "url": "",
     "email": "odey.abdalrahman@gmail.com"
   },
-  "homepage": ""
+  "homepage": "",
+  "dependencies": {
+    "react-error-boundary": "^3.1.4"
+  }
 }
