@@ -10,7 +10,7 @@ In the project directory, you can run: npm i emoji-rating-js
 
 To used Add this lines
 
-![rating by emojes](https://i.postimg.cc/MZvPKhw9/emoji-react-js.png)
+![rating by emojes](https://i.postimg.cc/WtRzTqM7/new.png)
 
 1. `import { EmojiRating, Emojes, Styles } from 'emoji-rating-js`
 
@@ -19,7 +19,7 @@ To used Add this lines
 3. `const getEmoji = (item) => setEmoji(item);`
     
 4. `<EmojiRating
-        data={Emojes}
+        data={Emojes.G1}
         onChange={getEmoji}
         style={Styles.style2}
       />`

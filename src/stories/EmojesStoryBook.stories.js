@@ -9,9 +9,10 @@ stories.add("App", () => {
   const getEmoji = (item) => setEmoji(item);
   return (
     <ErrorBoundary>
-      <br />
-      <EmojiRating data={Emojes} onChange={getEmoji} style={Styles.blueStyle2} />
-      <br />
+      <h3> Group 1: </h3>
+      <EmojiRating data={Emojes.G1} onChange={getEmoji} style={Styles.style2} />
+      <h3>Group 2:</h3>
+      <EmojiRating data={Emojes.G2} onChange={getEmoji} style={Styles.blueStyle2} />
       <h4>your rating is: {Emoji.name}</h4>
     </ErrorBoundary>
   );
