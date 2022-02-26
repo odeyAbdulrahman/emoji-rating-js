@@ -1,6 +1,6 @@
 # react emoji rating
 
-This Library for rating using emojes in react js
+This Library is used to evaluate or rating using emojis in react js
 
 ## Installation
 
@@ -10,7 +10,9 @@ In the project directory, you can run: npm i emoji-rating-js
 
 To used Add this lines
 
-![rating by emojes](https://i.postimg.cc/WtRzTqM7/new.png)
+![rating by emojes](https://i.postimg.cc/jdzvcLGF/Animation.gif)
+
+![rating by emojes](https://i.postimg.cc/JnD5knNK/Capture.png)
 
 1. `import { EmojiRating, Emojes, Styles } from 'emoji-rating-js`
 

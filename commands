@@ -1,0 +1,6 @@
+1- npm install --global rollup
+2- npm install --global rollup rollup-plugin-babel
+3- npm install --save-dev rollup-plugin-img
+4- npm run build-lib
+5- npm run storybook
+6- npm publish

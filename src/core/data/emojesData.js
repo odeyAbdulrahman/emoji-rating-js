@@ -8,6 +8,11 @@ import G2VeryGood from "../../../dist/assets/G2/b.png";
 import G2Good from "../../../dist/assets/G2/c.png";
 import G2NotSatisfied from "../../../dist/assets/G2/d.png";
 
+import G3Like from "../../../dist/assets/G3/a.png";
+import G3VeryGood from "../../../dist/assets/G3/b.png";
+import G3Good from "../../../dist/assets/G3/c.png";
+import G3NotSatisfied from "../../../dist/assets/G3/d.png";
+
 const emojes = {
   G1: [
     { id: 1, name: "Like", img: G1Like, status: true },
@@ -20,6 +25,12 @@ const emojes = {
     { id: 2, name: "very good", img: G2VeryGood, status: true },
     { id: 3, name: "good", img: G2Good, status: true },
     { id: 4, name: "Not satisfied", img: G2NotSatisfied, status: false },
+  ],
+  G3: [
+    { id: 1, name: "Like", img: G3Like, status: true },
+    { id: 2, name: "very good", img: G3VeryGood, status: true },
+    { id: 3, name: "good", img: G3Good, status: true },
+    { id: 4, name: "Not satisfied", img: G3NotSatisfied, status: false },
   ],
 };
 export default emojes;

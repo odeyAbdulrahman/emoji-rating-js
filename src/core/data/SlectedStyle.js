@@ -12,7 +12,6 @@
         'border-bottom': 'solid 1px #4d100a85'
       }
     },
-  
     style2: {
       img:
       {
@@ -50,5 +49,18 @@
         'border-bottom': 'solid 2px #3498DB'
       }
     },
+    styleBord: {
+      img:
+      {
+        'border-bottom': 'none',
+        border: "solid #3498DB 3px",
+        transition: 'all 0.4s ease'
+      },
+      text:{
+        color: '#3498DB',
+        'border-bottom': 'solid 3px #3498DB'
+      }
+    },
+    
   };
   export default styles;

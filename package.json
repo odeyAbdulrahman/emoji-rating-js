@@ -1,7 +1,7 @@
 {
   "name": "emoji-rating-js",
-  "version": "0.2.6",
-  "description": "This Library for rating using emojes in react js",
+  "version": "0.2.7",
+  "description": "This Library is used to evaluate or rating using emojis in react js",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {

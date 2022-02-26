@@ -7,13 +7,19 @@ const stories = storiesOf("emojes app", module);
 stories.add("App", () => {
   const [Emoji, setEmoji] = useState({});
   const getEmoji = (item) => setEmoji(item);
+  const style = {'text-align': 'center;'}
   return (
-    <ErrorBoundary>
-      <h3> Group 1: </h3>
-      <EmojiRating data={Emojes.G1} onChange={getEmoji} style={Styles.style2} />
-      <h3>Group 2:</h3>
-      <EmojiRating data={Emojes.G2} onChange={getEmoji} style={Styles.blueStyle2} />
-      <h4>your rating is: {Emoji.name}</h4>
-    </ErrorBoundary>
+    <div style={style}>
+      <ErrorBoundary>
+        <h3> Group 1: </h3>
+        <EmojiRating data={Emojes.G1} onChange={getEmoji} style={Styles.style2} />
+        <h3> Group 2: </h3>
+        <EmojiRating data={Emojes.G2} onChange={getEmoji} style={Styles.style2} />
+        <h3>Group 3:</h3>
+        <EmojiRating data={Emojes.G3} onChange={getEmoji} style={Styles.styleBord} />
+
+        <h4>your rating is: {Emoji.name}</h4>
+      </ErrorBoundary>
+    </div>
   );
 });
