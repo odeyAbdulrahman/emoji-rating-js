@@ -4,7 +4,8 @@ import "./emojiRating.css";
 function EmojiRating({
   data,
   onChange,
-  style
+  style,
+  size
 }) {
   const [selected, setSelected] = useState(0);
   try{
@@ -24,9 +25,15 @@ function EmojiRating({
                 <img
                   className="emoji-img"
                   src={item.img}
+                  width={size}
+                  height={size}
                   style={selected === item.id ? style.img : null}
                 />
-                <label style={selected === item.id ? style.text : null}>{item.name}</label>
+                 <label style={selected === item.id ? style.text : null}>
+                  <span style={{ "font-size": size + 15 + "%" }}>
+                    {item.name}
+                  </span>
+                </label>
               </div>
             ))}
         </div>

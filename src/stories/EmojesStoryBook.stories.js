@@ -1,25 +1,30 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import { EmojiRating, Emojes, Styles } from "../../dist/index.es";
-import { ErrorBoundary } from "react-error-boundary";
+import {
+  EmojiRating,
+  SymbEmojiRating,
+  Emojes,
+  SymbolEmojes,
+  Styles,
+} from "../../dist/index.es";
 
 const stories = storiesOf("emojes app", module);
 stories.add("App", () => {
   const [Emoji, setEmoji] = useState({});
   const getEmoji = (item) => setEmoji(item);
-  const style = {'text-align': 'center;'}
-  return (
-    <div style={style}>
-      <ErrorBoundary>
-        <h3> Group 1: </h3>
-        <EmojiRating data={Emojes.G1} onChange={getEmoji} style={Styles.style2} />
-        <h3> Group 2: </h3>
-        <EmojiRating data={Emojes.G2} onChange={getEmoji} style={Styles.style2} />
-        <h3>Group 3:</h3>
-        <EmojiRating data={Emojes.G3} onChange={getEmoji} style={Styles.styleBord} />
 
-        <h4>your rating is: {Emoji.name}</h4>
-      </ErrorBoundary>
-    </div>
+  const [catEmoji, setCatEmoji] = useState({});
+  const getCatEmoji = (item) => setCatEmoji(item);
+  return (
+    <>
+      <div>
+        <h3>Start: <strong style={Styles.style.text}>{Emoji.name}</strong></h3>
+        <EmojiRating data={Emojes.Star} onChange={getEmoji} style={Styles.style}  size={65} />
+      </div>
+      <div>
+        <h3>Cat: <strong style={Styles.blueStyle.text}>{catEmoji.name}</strong></h3>
+        <SymbEmojiRating data={SymbolEmojes.Cat} onChange={getCatEmoji} style={Styles.blueStyle} size={45} />
+      </div>
+    </>
   );
 });

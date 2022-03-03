@@ -10,21 +10,20 @@ In the project directory, you can run: npm i emoji-rating-js
 
 To used Add this lines
 
-![rating by emojes](https://i.postimg.cc/jdzvcLGF/Animation.gif)
+![rating by emojes](https://i.postimg.cc/6pxrtTg9/Animation.gif)
 
-![rating by emojes](https://i.postimg.cc/JnD5knNK/Capture.png)
+![rating by emojes](https://i.postimg.cc/fL1GbxY2/emojes-code.png)
 
-1. `import { EmojiRating, Emojes, Styles } from 'emoji-rating-js`
+1. `import { EmojiRating, SymbEmojiRating, Emojes, SymbolEmojes, Styles } from 'emoji-rating-js`
 
-2. ` const [Emoji, setEmoji] = useState({});`
+2. `const [Emoji, setEmoji] = useState({});`
 
 3. `const getEmoji = (item) => setEmoji(item);`
     
-4. `<EmojiRating
-        data={Emojes.G1}
-        onChange={getEmoji}
-        style={Styles.style2}
-      />`
+4. `
+    <EmojiRating data={Emojes.Star} onChange={getEmoji} style={Styles.style}  size={65} />
+    <SymbEmojiRating data={SymbolEmojes.Cat} onChange={getCatEmoji} style={Styles.blueStyle} size={45} />
+   `
 
 ## Options
 
@@ -33,3 +32,4 @@ To used Add this lines
 | data        |  json object         | `List of emoji objects`   |
 | onChange         | func         | `Called when any emoji item selected`   |
 | style        | css object         | `add style to selected emoji item`   |
+| size        | number         | `size of emoji`   |

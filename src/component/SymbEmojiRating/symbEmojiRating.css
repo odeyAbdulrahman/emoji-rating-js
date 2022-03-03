@@ -17,7 +17,7 @@
     -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
-  .emoji-box .emoji-img {
+  .emoji-box .emoji-symbol {
     border-bottom: solid 1px #4d100a85 !important ;
     cursor: pointer !important;
     border-radius: 50% !important;
