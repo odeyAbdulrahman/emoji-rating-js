@@ -51,5 +51,9 @@
     "url": "https://github.com/odeyAbdulrahman/emoji-rating-js/issues",
     "email": "odey.abdalrahman@gmail.com"
   },
-  "homepage": "https://github.com/odeyAbdulrahman/emoji-rating-js"
+  "homepage": "https://github.com/odeyAbdulrahman/emoji-rating-js",
+  "dependencies": {
+    "glob-parent": "^5.1.2",
+    "prismjs": "^1.27.0"
+  }
 }
