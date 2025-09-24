@@ -54,6 +54,7 @@
   "homepage": "https://github.com/odeyAbdulrahman/emoji-rating-js",
   "dependencies": {
     "glob-parent": "^6.0.2",
+    "pbkdf2": "^3.1.3",
     "prismjs": "^1.27.0",
     "trim": "^1.0.1"
   }
